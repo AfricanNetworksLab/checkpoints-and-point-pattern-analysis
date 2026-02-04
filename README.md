@@ -11,4 +11,4 @@ In terms of data processing, this script provides an example of how to integrate
 
 ## Citation
 Please cite as:
-David G. Russell & Olivier J. Walther (2026) Checkpoints and networks R code. https://github.com/AfricanNetworksLab/checkpoints-and-networks
+David G. Russell & Olivier J. Walther (2026) Checkpoints and point pattern analysis R code. https://github.com/AfricanNetworksLab/checkpoints-and-point-pattern-analysis
