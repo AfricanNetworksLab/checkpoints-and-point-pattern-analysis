@@ -26,11 +26,11 @@ window.owin <-  owin(poly = list(x=rev(window.lon),y=rev(window.lat)))
 
 
 ###### Create spatstat ppp object ######
-pointsShapefile <- pointsShapefile %>%
-  dplyr::mutate(lon = sf::st_coordinates(.)[,1],
-                lat = sf::st_coordinates(.)[,2])
-points.ppp <- ppp(x = pointsShapefile$lon,
-                  y = pointsShapefile$lat,
+points.lon <- st_coordinates(pointsShapefile)[,1]
+points.lat <- st_coordinates(pointsShapefile)[,2]
+
+points.ppp <- ppp(x = points.lon,
+                  y = points.lat,
                   window = window.owin,
                   marks = as.factor(pointsShapefile$type)) 
 # Make sure marks column name is correct
